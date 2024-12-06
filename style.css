@@ -1,0 +1,67 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    background-size: cover;
+}
+body div{
+  border-radius: 8px;
+}
+#searchDiv {
+  /* max-width: 400px; 
+  margin-left: 30%;
+  margin-bottom: 10px; */
+  max-width: 100%;
+  margin: 0 auto;
+}
+#userInput {
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+button {
+  max-width: 40%;
+}
+button{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+button:hover{
+  background-color: #28a745;
+  transform: scale(1.05);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  #searchDiv {
+      max-width: 100%;
+      margin: 0 auto;
+  }
+
+  #userInput {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+      font-size: 1.5rem; 
+  }
+
+  #userInput {
+      width: 100%;
+      font-size: 0.9rem; 
+  }
+
+  button {
+      width: 100%;
+      font-size: 0.9rem;
+  }
+}
